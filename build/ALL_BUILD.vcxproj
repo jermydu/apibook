@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9EF69F02-0483-33F4-BF22-3D9B2FF82326}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\book\apibook\apibook\external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\book\apibook\apibook\external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\book\apibook\apibook\external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\book\apibook\apibook\external;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\book\apibook\apibook\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/book/apibook/apibook/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/book/apibook/apibook -BD:/book/apibook/apibook/build --check-stamp-file D:/book/apibook/apibook/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.24\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\book\apibook\apibook\build\CMakeFiles\3.24.0-rc4\CMakeCCompiler.cmake;D:\book\apibook\apibook\build\CMakeFiles\3.24.0-rc4\CMakeCXXCompiler.cmake;D:\book\apibook\apibook\build\CMakeFiles\3.24.0-rc4\CMakeRCCompiler.cmake;D:\book\apibook\apibook\build\CMakeFiles\3.24.0-rc4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\book\apibook\apibook\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/book/apibook/apibook/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/book/apibook/apibook -BD:/book/apibook/apibook/build --check-stamp-file D:/book/apibook/apibook/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.24\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\book\apibook\apibook\build\CMakeFiles\3.24.0-rc4\CMakeCCompiler.cmake;D:\book\apibook\apibook\build\CMakeFiles\3.24.0-rc4\CMakeCXXCompiler.cmake;D:\book\apibook\apibook\build\CMakeFiles\3.24.0-rc4\CMakeRCCompiler.cmake;D:\book\apibook\apibook\build\CMakeFiles\3.24.0-rc4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\book\apibook\apibook\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/book/apibook/apibook/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/book/apibook/apibook -BD:/book/apibook/apibook/build --check-stamp-file D:/book/apibook/apibook/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.24\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\book\apibook\apibook\build\CMakeFiles\3.24.0-rc4\CMakeCCompiler.cmake;D:\book\apibook\apibook\build\CMakeFiles\3.24.0-rc4\CMakeCXXCompiler.cmake;D:\book\apibook\apibook\build\CMakeFiles\3.24.0-rc4\CMakeRCCompiler.cmake;D:\book\apibook\apibook\build\CMakeFiles\3.24.0-rc4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\book\apibook\apibook\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/book/apibook/apibook/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/book/apibook/apibook -BD:/book/apibook/apibook/build --check-stamp-file D:/book/apibook/apibook/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCCompilerABI.c;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.24\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;D:\book\apibook\apibook\build\CMakeFiles\3.24.0-rc4\CMakeCCompiler.cmake;D:\book\apibook\apibook\build\CMakeFiles\3.24.0-rc4\CMakeCXXCompiler.cmake;D:\book\apibook\apibook\build\CMakeFiles\3.24.0-rc4\CMakeRCCompiler.cmake;D:\book\apibook\apibook\build\CMakeFiles\3.24.0-rc4\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\book\apibook\apibook\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\book\apibook\apibook\build\ZERO_CHECK.proj">
+      <Project>{D2CB776E-D058-3F94-AAA7-8C8702D425FD}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\03_Patterns\adapter\adapter.vcxproj">
+      <Project>{A499E463-C243-346E-9BF2-77C134D0D30C}</Project>
+      <Name>adapter</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\05_Styles\stack_datadriven\arglist_test.vcxproj">
+      <Project>{442FD458-A5E8-36BD-8422-13BBB896D47C}</Project>
+      <Name>arglist_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\07_Performance\auto_timer\autotimer.vcxproj">
+      <Project>{84382467-3647-32F5-8938-DE72163BEDD7}</Project>
+      <Name>autotimer</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\06_Cpp_Style\bad_friends\bad_friends.vcxproj">
+      <Project>{8139EA53-F558-3B46-907C-FE069DDBA7A5}</Project>
+      <Name>bad_friends</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\02_Qualities\callback_instance\callback_instance.vcxproj">
+      <Project>{35D5E62C-2679-3D04-9FFB-ADE94B97B12A}</Project>
+      <Name>callback_instance</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\02_Qualities\callback_static\callback_static.vcxproj">
+      <Project>{83038CAC-7AA2-3710-9A5F-9E98A57C278E}</Project>
+      <Name>callback_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\07_Performance\const_reference\const_reference.vcxproj">
+      <Project>{21435954-6DEA-325E-9220-4CD439B1B4EC}</Project>
+      <Name>const_reference</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\06_Cpp_Style\constructors\constructors.vcxproj">
+      <Project>{F083FC37-0125-38CA-B829-C1ADF34B144F}</Project>
+      <Name>constructors</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\02_Qualities\coord2d_template\coord2d_template.vcxproj">
+      <Project>{29CC5ADD-C8F3-3987-AC62-C4F28645136F}</Project>
+      <Name>coord2d_template</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\07_Performance\copy_on_write\copy_on_write.vcxproj">
+      <Project>{45042C56-C69C-3752-A9B9-7819869E36E7}</Project>
+      <Name>copy_on_write</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\12_Extensibility\plugin_api\coreapi.vcxproj">
+      <Project>{27282093-4D69-3A72-B4A9-F613625AE3CC}</Project>
+      <Name>coreapi</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\12_Extensibility\curious_templates\curious_templates.vcxproj">
+      <Project>{39DD99DB-99A9-3B95-9E74-2B75AF58A9D0}</Project>
+      <Name>curious_templates</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\08_Versioning\deprecate_compiletime\deprecate_compiletime.vcxproj">
+      <Project>{7A0F8B1C-4C3C-3BFA-AFC4-61311090D909}</Project>
+      <Name>deprecate_compiletime</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\08_Versioning\deprecate_runtime\deprecate_runtime.vcxproj">
+      <Project>{785E15D9-9254-3B59-9BAD-B7C1FC01B2ED}</Project>
+      <Name>deprecate_runtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\06_Cpp_Style\extern_leakage\extern_leakage.vcxproj">
+      <Project>{9837C0D9-EC2E-38F2-A109-B988274FEADD}</Project>
+      <Name>extern_leakage</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\03_Patterns\facade\facade.vcxproj">
+      <Project>{5F4CFF95-FD82-3BC3-B4E7-3D923E0B4B70}</Project>
+      <Name>facade</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\03_Patterns\factory_extensible\factory_extensible.vcxproj">
+      <Project>{23578978-003F-3002-B977-32D0BA6A4716}</Project>
+      <Name>factory_extensible</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\03_Patterns\factory_simple\factory_simple.vcxproj">
+      <Project>{9E168EDC-5AAF-336C-A42C-ADBFE3AA55D4}</Project>
+      <Name>factory_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\07_Performance\getter_speed\getter_speed.vcxproj">
+      <Project>{FD9390BE-A42B-3ADD-8086-E7CBCE4F7E3C}</Project>
+      <Name>getter_speed</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\02_Qualities\hide_class\hide_class.vcxproj">
+      <Project>{4FEB3555-3F33-3616-A5DF-063CC0D1C813}</Project>
+      <Name>hide_class</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\07_Performance\iterators\iterators.vcxproj">
+      <Project>{1171E400-CF03-3C33-8E46-5FF92B757E6E}</Project>
+      <Name>iterators</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\04_Design\named_parameters\named_parameters.vcxproj">
+      <Project>{7AC385FC-20F3-33DA-8CE3-DCCC5299F490}</Project>
+      <Name>named_parameters</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\03_Patterns\observer\observer.vcxproj">
+      <Project>{7AC5C966-0BCC-3D08-BEAF-E402FD967E8B}</Project>
+      <Name>observer</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\03_Patterns\opaque_pointer\opaque_pointer.vcxproj">
+      <Project>{7F6D4018-363E-32A4-B6C7-33DF2D210C03}</Project>
+      <Name>opaque_pointer</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\06_Cpp_Style\operators\operators.vcxproj">
+      <Project>{F07EF4DF-1608-36C3-9D61-E3B66E032075}</Project>
+      <Name>operators</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\03_Patterns\pimpl_good\pimp_good.vcxproj">
+      <Project>{BAA2E303-B172-3BE1-A8B2-4CD1C8BF00F8}</Project>
+      <Name>pimp_good</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\03_Patterns\pimpl_bad\pimpl_bad.vcxproj">
+      <Project>{F001D321-4E3A-304B-9F0A-B07A32A0AF1D}</Project>
+      <Name>pimpl_bad</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\03_Patterns\pimpl_boost\pimpl_boost.vcxproj">
+      <Project>{1F577120-D7D2-3773-B092-929544DE3020}</Project>
+      <Name>pimpl_boost</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\12_Extensibility\plugin_api\plugin1.vcxproj">
+      <Project>{4C61072E-2940-3A0D-B9F2-F10CE1CF676F}</Project>
+      <Name>plugin1</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\12_Extensibility\plugin_api\plugin2.vcxproj">
+      <Project>{772B705C-03E4-3954-9DB5-3C62D0C227D8}</Project>
+      <Name>plugin2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\12_Extensibility\plugin_api\plugin_api.vcxproj">
+      <Project>{CF81F50D-6DD6-3C6B-BC90-99857E9ADED3}</Project>
+      <Name>plugin_api</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\03_Patterns\proxy_interface\proxy_interface.vcxproj">
+      <Project>{43944D52-99F2-378E-A11C-80118F94FE43}</Project>
+      <Name>proxy_interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\03_Patterns\proxy_simple\proxy_simple.vcxproj">
+      <Project>{D08A700C-AD57-3599-A73D-4D1D174BE1D8}</Project>
+      <Name>proxy_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\10_Testing\self_test\self_test.vcxproj">
+      <Project>{E2F95B05-BD37-39CF-AE40-A0D6336CCB90}</Project>
+      <Name>self_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\02_Qualities\shared_pointer\shared_pointer.vcxproj">
+      <Project>{F12C2963-42E8-3343-A091-B4400A5163B1}</Project>
+      <Name>shared_pointer</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\03_Patterns\singleton\singleton.vcxproj">
+      <Project>{F21CB0C0-485F-3BC4-9EB1-D28B80679260}</Project>
+      <Name>singleton</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\05_Styles\stack_c\stack_c.vcxproj">
+      <Project>{E4F00EF5-6672-3340-A270-49CC00CA5A6A}</Project>
+      <Name>stack_c</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\05_Styles\stack_cpp\stack_cpp.vcxproj">
+      <Project>{2E31A688-DB24-3A62-A6C2-0614471D49AF}</Project>
+      <Name>stack_cpp</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\05_Styles\stack_datadriven\stack_datadriven.vcxproj">
+      <Project>{F3A8A345-7ECE-348C-B6C2-1ADABB22D1A5}</Project>
+      <Name>stack_datadriven</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\05_Styles\stack_preprocessor\stack_preprocessor.vcxproj">
+      <Project>{AE7EBDE4-A70E-36FC-B84E-4DB0107679EE}</Project>
+      <Name>stack_preprocessor</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\05_Styles\stack_template\stack_template.vcxproj">
+      <Project>{3277CB2C-18B4-317D-BC68-062F1552FA2F}</Project>
+      <Name>stack_template</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\07_Performance\struct_size\struct_size.vcxproj">
+      <Project>{9DA7ED71-6C91-38BE-9BD9-C46D8C9910FE}</Project>
+      <Name>struct_size</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\06_Cpp_Style\template_explicit\template_explicit.vcxproj">
+      <Project>{0CC17002-3529-3EC9-81CD-F6AD1A807D3F}</Project>
+      <Name>template_explicit</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\06_Cpp_Style\template_polymorphism\template_polymorphism.vcxproj">
+      <Project>{860FAEBA-A980-345B-B0AF-5E005E4B920B}</Project>
+      <Name>template_polymorphism</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\06_Cpp_Style\template_specialization\template_specialization.vcxproj">
+      <Project>{2039EC90-CD1E-31D9-BEAE-6155300243D7}</Project>
+      <Name>template_specialization</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\10_Testing\unit_test\unit_test.vcxproj">
+      <Project>{EB713551-B45D-3953-B8A3-60EFB0DC8B6D}</Project>
+      <Name>unit_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\08_Versioning\version_api\version_api.vcxproj">
+      <Project>{B9C105FE-94CE-3127-B1B8-6CEF04391BC6}</Project>
+      <Name>version_api</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\07_Performance\virtual_speed\virtual_speed.vcxproj">
+      <Project>{6A73A80A-D580-36D5-99A6-A96E28A8FF04}</Project>
+      <Name>virtual_speed</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\book\apibook\apibook\build\12_Extensibility\visitor\visitor.vcxproj">
+      <Project>{8267C24B-AAE7-39D3-93E2-EB453E7F7650}</Project>
+      <Name>visitor</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

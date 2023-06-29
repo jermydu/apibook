@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\book\apibook\apibook\08_Versioning\deprecate_compiletime\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\book\apibook\apibook\08_Versioning\deprecate_compiletime\myclass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\book\apibook\apibook\08_Versioning\deprecate_compiletime\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{DA926EFC-4CA1-3E31-92FC-27C0D34B3CCF}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
