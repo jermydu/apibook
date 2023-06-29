@@ -1,0 +1,13 @@
+build/.vs/
+*.recipe
+*.ilk
+*.log
+*.obj
+*.pdb
+*.lastbuildstate
+*.tlog
+*.exe
+*.lib
+*.user
+*.dll
+*.exp
